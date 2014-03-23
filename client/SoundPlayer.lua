@@ -159,7 +159,7 @@ function SoundPlayer:CreateWindow()
 		slidertext = slidertext .. "sound:SetParameter(".. name[2] .. ",".. tostring(slider:GetValue()) .. ")\n"
 	end
 	self.textbox:SetText(
-					"Local sound = ClientSound.Create(AssetLocation.Game, {\n"..
+					"local sound = ClientSound.Create(AssetLocation.Game, {\n"..
 					"			bank_id = " .. self.archives[self.bankid + 1] .. ",\n"..
 					"			sound_id = " .. self.archiveContents[self.bankid + 1][self.soundid + 1].index .. ",\n"..
 					"			position = LocalPlayer:GetPosition(),\n"..
@@ -177,7 +177,7 @@ function SoundPlayer:UpdateTextBox()
 		slidertext = slidertext .. "sound:SetParameter(".. name[2] .. ",".. tostring(slider:GetValue()) .. ")\n"
 	end
 	self.textbox:SetText(
-					"Local sound = ClientSound.Create(AssetLocation.Game, {\n"..
+					"local sound = ClientSound.Create(AssetLocation.Game, {\n"..
 					"			bank_id = " .. self.archives[self.bankid + 1] .. ",\n"..
 					"			sound_id = " .. self.archiveContents[self.bankid + 1][self.soundid + 1].index .. ",\n"..
 					"			position = LocalPlayer:GetPosition(),\n"..
